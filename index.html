@@ -14,7 +14,7 @@
 </body>
 <script>
     var alertX = document.querySelector(`#alertX`)
-    , nav = JSON.stringify(navigator)
+    , ua = JSON.stringify(navigator.userAgent)
     if ((!navigator.getUserMedia) && (!navigator.mediaDevices.getUserMedia)) {
         alertX.textContent = `no`;
         window.alert(`no`)
@@ -23,7 +23,7 @@
         window.alert(`yes`)
     }
     alertX.textContent += navigator.userAgent;
-    document.write(nav)
+    document.write(ua)
 </script>
 
 </html>
