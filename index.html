@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel=stylesheet type="text/css" href="css/style.css">
+</head>
+<body>
+<<<<<<< HEAD
+    <p id="alertX">111111111111111</p>
+=======
+    <p id="alertX">11111111111</p>
+>>>>>>> 18ea06aa198f5e93bd30f7aac9d74f157ed0567c
+</body>
+    <script>window.onload = function () {
+    var alertX = document.querySelector(`#alertX`);
+    if ((!navigator.getUserMedia) && (!navigator.mediaDevices.getUserMedia)) {
+        alertX.textContent = `no`;
+    } else {
+        alertX.textContent = `yes`;
+    }
+    alertX.textContent += navigator.userAgent;
+}
+        </script>
+</html>
