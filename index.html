@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,13 @@
     <title>Document</title>
     <link rel=stylesheet type="text/css" href="css/style.css">
 </head>
+
 <body>
     <p id="alertX">111111111111111</p>
 </body>
-    <script>window.onload = function () {
-    var alertX = document.querySelector(`#alertX`);
+<script>
+    var alertX = document.querySelector(`#alertX`)
+    , nav = JSON.stringify(navigator)
     if ((!navigator.getUserMedia) && (!navigator.mediaDevices.getUserMedia)) {
         alertX.textContent = `no`;
         window.alert(`no`)
@@ -20,9 +23,7 @@
         window.alert(`yes`)
     }
     alertX.textContent += navigator.userAgent;
-    
-}
-window.alert(navigator.wxuserAgent)
-document.write(`JSrun`)
-        </script>
+    document.write(nav)
+</script>
+
 </html>
