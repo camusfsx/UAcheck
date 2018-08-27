@@ -14,7 +14,7 @@
 </body>
 <script>
     var alertX = document.querySelector(`#alertX`)
-    , ua = JSON.stringify(navigator.userAgent)
+    , ua = JSON.stringify(navigator.mediaDevices)
     if ((!navigator.getUserMedia) && (!navigator.mediaDevices.getUserMedia)) {
         alertX.textContent = `no`;
         
