@@ -20,14 +20,15 @@
   </script>
 <script>
     var alertX = document.querySelector(`#alertX`)
-    , ua = JSON.stringify(typeof navigator.mediaDevices)
-    if ((!navigator.getUserMedia) && (!navigator.mediaDevices.getUserMedia)) {
-        alertX.textContent = `no`;
-    } else {
-        alertX.textContent = `yes`;
-    }
-    alertX.textContent += navigator.userAgent;
-    alert(ua)
+    , ua = typeof navigator.mediaDevices
+    console.log(ua)
+   // if ((!navigator.getUserMedia) && (!navigator.mediaDevices.getUserMedia)) {
+   //     alertX.textContent = `no`;
+   //} else {
+   //     alertX.textContent = `yes`;
+   // }
+   // alertX.textContent += navigator.userAgent;
+   // alert(ua)
 </script>
 
 </html>
