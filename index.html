@@ -7,20 +7,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel=stylesheet type="text/css" href="css/style.css">
+    <script src="./js/vconsole.min.js"></script>
 </head>
 
 <body>
     <p id="alertX">111111111111111</p>
 </body>
 <script>
+    // 初始化
+    var vConsole = new VConsole();
+    console.log('Hello world');
+  </script>
+<script>
     var alertX = document.querySelector(`#alertX`)
     , ua = JSON.stringify(typeof navigator.mediaDevices)
     if ((!navigator.getUserMedia) && (!navigator.mediaDevices.getUserMedia)) {
         alertX.textContent = `no`;
-        
     } else {
         alertX.textContent = `yes`;
-        
     }
     alertX.textContent += navigator.userAgent;
     alert(ua)
